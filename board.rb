@@ -29,10 +29,3 @@ class Board
   end
 
 end
-
-board = Board.new
-board.display_board
-board.update_board(2, "X")
-board.display_board
-board.update_board(4, "O")
-board.display_board
