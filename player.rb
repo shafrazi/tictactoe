@@ -1,9 +1,10 @@
 class Player
   @@win_combo = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
-  attr_accessor :name, :symbol, :inputs
+  attr_accessor :name, :symbol, :inputs, :active
   def initialize(name, symbol)
     @name = name
     @symbol = symbol
+    @active = false
     @inputs = []
   end
 
@@ -23,12 +24,4 @@ class Player
     end
     won
   end
-
 end
-
-# player = Player.new("shafrazi", "X")
-# player.inputs = [1, 3, 5, 6]
-# p player.player_won?
-# player.play(4)
-# p player.inputs
-# p player.player_won?
