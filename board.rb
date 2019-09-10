@@ -1,5 +1,6 @@
 class Board
   attr_accessor :cells
+
   def initialize
     @cells = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "]
     @border = "---+---+---"
@@ -27,5 +28,4 @@ class Board
   def update_board(input, symbol)
     cells[input - 1] = " #{symbol} "
   end
-
 end
